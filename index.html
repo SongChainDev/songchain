@@ -1,49 +1,243 @@
 <!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <title>Songchain - Music NFT Marketplace and Community</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400italic,700,700italic%7CSource+Sans+Pro:300,300italic,400,400italic" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="styles.css">
-        </noscript>
-    </head>
-    <body class="is-loading">
-        <div id="wrapper">
-            <div id="main">
-                <div class="inner">
-                    <h1 id="text01">
-                        <!-- <strong>Songchain</strong> -->
-                        <img src=website_logo_transparent_background.png
-                        alt="Songchain Logo"
-                        style="width:100%; align-self: center;"
-                        >
-                    </h1>
-                    <p id="text02">
-                        <strong>Empowering Independent Musicians Through Non-Fungible Tokens</strong>
-                    </p>
-                    <a class="typeform-share button" href="https://form.typeform.com/to/yqPGGieS?typeform-medium=embed-snippet" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#7DBB91;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Sign up for our beta! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                    <hr id="divider01">
-                    <!-- <form id="form01" method="post">
-                        <div class="inner">
-                            <div class="field">
-                                <input type="text" name="fname" id="form01-fname" placeholder="Name" maxlength="128" required/>
-                            </div>
-                            <div class="field">
-                                <input type="email" name="email" id="form01-email" placeholder="Email" maxlength="128" required/>
-                            </div>
-                            <div class="field">
-                                <input type="text" name="name" id="form01-name" placeholder="Name" maxlength="128"/>
-                            </div>
-                            <div class="actions">
-                                <button type="submit">Request an Invite</button>
-                            </div>
-                        </div>
-                        <input type="hidden" name="id" value="form01"/>
-                    </form> -->
-                </div>
-            </div>
-        </div>
-        <script src="main.js"></script>
-    </body>
+<html>
+	<head>
+		<title>Songchain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">SongChain</a> beta</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="about.html">Blog</a></li>
+							<!-- <li><a href="#" class="button">Sign Up</a></li> -->
+							
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<!-- <h2>SongChain</h2> -->
+					<img src="images/website_logo_transparent_background.png" style="width:25em;" />
+					<p>Empowering independent artists through NFTs</p>
+					<ul class="actions special">
+						<li><a class="button primary typeform-share button" href="https://form.typeform.com/to/yqPGGieS?typeform-medium=embed-snippet" data-mode="drawer_right">Sign Up</a><script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
+						<!-- <li><a href="#" class="button">Learn More</a></li> -->
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Songchain is a new market for
+							<br />
+							independent artists to easily mint and sell NFTs</h2>
+							<p>We simplify the process of NFT creation in a market previously restricted to big-name artists who spend thousands on private NFT auctions.</p>
+						</header>
+						<span class="image featured hero"><img src="images/49th_3.JPG" id="stage" alt="" /></span>
+					</section>
+
+					<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-hammer accent3"></span>
+								<h3>Mint</h3>
+								<p>Artists can seamlessly mint NFTs on our platform at no cost and with no prior blockchain experience required. Musicians can focus on their work and we will handle the details.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-link accent2"></span>
+								<h3>Connect</h3>
+								<p>Artists and their fans can come together on SongChain not only to buy and sell custom NFTs, but also to chat, interact, and discuss important trends and news in music. Users can form communities around their favorite genres, cities, and topics to find other like-minded users on SongChain.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-coins accent5"></span>
+								<h3>Invest</h3>
+								<p>Fans can support their favorite artists by purchasing an NFT while simultaneously investing in that artist's potential. If your favorite underappreciated musician finally blows up, you have cash along with bragging rights to show for it.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-search-location accent4"></span>
+								<h3>Discover</h3>
+								<p>Fans can promote up and coming acts by engaging and upvoting underecognized artists. Via this system, users are encouraged to discover new music curated by the Songchain community in a transparent and fair format.</p>
+							</section>
+						</div>
+					</section>
+
+					<!-- <div class="row team"> -->
+						<!-- <div class="col-6 col-12-narrower"> -->
+
+							<section class="box special team">
+								<div style="display: flex; justify-content: center;">
+									<span class="image half-featured">
+										<!-- <img src="images/IMG_2262.JPG" alt="" /> -->
+										<figure class="snip1273 team" >
+											<img src="images/IMG_2262.JPG" alt="sample86"/>
+											<figcaption >
+											<h4>Nate Koidahl, CEO</h4>
+											<p>Musician</p>
+											</figcaption>
+										</figure>
+									</span>
+									<span class="image half-featured">
+										<!-- <img src="images/IMG_4165.JPG" alt="" /> -->
+										<figure class="snip1273 team" >
+											<img src="images/Asset0024.jpg" alt="sample86"/>
+											<figcaption >
+											<h4>Nicky Swedin, CMO</h4>
+											<p>Producer for 49th Parallel</p>
+											</figcaption>
+										</figure>
+									</span>
+								</div>
+								
+								<h3>For Musicians, by Musicians</h3>
+								<p>SongChain's team is composed of indpendent musicians who see a need for a product that can bring the potential of NFTs to artists like them.</p>
+								<ul class="actions special">
+									<li><a href="about.html" class="button alt">Learn More About Our Team</a></li>
+								</ul>
+							</section>
+							
+						<!-- </div> -->
+						<!-- <div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								
+								<h3>Accumsan integer</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div> -->
+					<!-- </div> -->
+
+						<!-- Testimonials -->
+						<section class="box special testimonial">
+							<h2 style="justify-self: center;">
+								What Artists Think About SongChain
+							</h2>
+							<div class="carousel">
+								<div>
+									<div class="card">
+										<img src="images/49th_1.JPG" alt="Avatar" style="width:100%">
+										<div class="container">
+										  <h4><b>John Doe</b></h4>
+										  <p>Architect & Engineer</p>
+										</div>
+									  </div>
+								</div>
+								<div>
+									<div class="card">
+										<img src="images/49th_1.JPG" alt="Avatar" style="width:100%">
+										<div class="container">
+										  <h4><b>Dude</b></h4>
+										  <p>Kid</p>
+										</div>
+									  </div>
+								</div>
+								<div>
+									<div class="card">
+										<img src="images/49th_1.JPG" alt="Avatar" style="width:100%">
+										<div class="container">
+										  <h4><b>Dude</b></h4>
+										  <p>Guy</p>
+										</div>
+									  </div>
+								</div>
+								<div>
+									<div class="card">
+										<img src="images/49th_1.JPG" alt="Avatar" style="width:100%">
+										<div class="container">
+										  <h4><b>Dude</b></h4>
+										  <p>Man</p>
+										</div>
+									  </div>
+								</div>
+								<div>
+									<div class="card">
+										<img src="images/49th_1.JPG" alt="Avatar" style="width:100%">
+										<div class="container">
+										  <h4><b>John Doe</b></h4>
+										  <p>Dude</p>
+										</div>
+									  </div>
+								</div>
+							</div>
+						</section>
+
+				</section>
+
+			
+				
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Sign up for beta access</h2>
+					<p>Be among the first to test SongChain and recieve unique rewards</p>
+					
+					<ul class="actions special">
+						<li><a class="typeform-share button" href="https://form.typeform.com/to/yqPGGieS?typeform-medium=embed-snippet" data-mode="drawer_right" style="font: green; background-color: white;">Sign Up</a><script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
+						<!-- <li><a href="#" class="button">Learn More</a></li> -->
+					</ul>
+					<!-- <form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form> -->
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/company/72069400/admin/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.facebook.com/SongChainUS" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/songcha.in/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+						<li><a href="https://discord.gg/3vEf2TAE" class="icon brands fa-discord" target="_blank"><span class="label">Discord</span></a></li>
+						<li><a href="https://www.tiktok.com/@songcha.in?lang=en" class="icon brands fa-tiktok" target="_blank"><span class="label">Tik tok</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; SongChain 2021</li><li>Made with ❤️ &nbsp; from Hanover, NH</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		
+			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
+				
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
