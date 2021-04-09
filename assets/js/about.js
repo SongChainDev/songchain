@@ -1,4 +1,3 @@
-
 (function($) {
 
 	var	$window = $(window),
@@ -36,7 +35,7 @@
 					'<a href="#navPanel" class="toggle"></a>' +
 				'</div>'
 			)
-				.appendTo('.content');
+				.appendTo($body);
 
 		// Panel.
 			$(
@@ -46,7 +45,7 @@
 					'</nav>' +
 				'</div>'
 			)
-				.appendTo('.content')
+				.appendTo($body)
 				.panel({
 					delay: 500,
 					hideOnClick: true,
@@ -57,5 +56,23 @@
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
+
+	// Header.
+		if (!browser.mobile
+		&&	$header.hasClass('alt')
+		&&	$banner.length > 0) {
+
+			$window.on('load', function() {
+
+				$banner.scrollex({
+					bottom:		$header.outerHeight(),
+					terminate:	function() { $header.removeClass('alt'); },
+					enter:		function() { $header.addClass('alt reveal'); },
+					leave:		function() { $header.removeClass('alt'); }
+				});
+
+			});
+
+		}
 
 })(jQuery);
